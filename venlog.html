@@ -83,14 +83,12 @@ p a:hover {
     margin-right: 10px;
     margin-left: 70%;
 } 
-
-
     </style>
 </head>
 <body>
     <div id="container">
         <div>
-            <a href="home.html">
+            <a href="index.html">
                 <button id="home-btn-signup"  ><strong>X</strong></button>
             </a>
         </div>
@@ -103,8 +101,8 @@ p a:hover {
                 <input type="password" id="Password" placeholder="Paasword"><br><br>
                 <input type="text" id="location" placeholder="City"><br><br>
                 <input type="text" id="Category" placeholder="Category"><br><br>
-                <button id="signin_btn" onclick="window.location.href='vendor.html'"     href="#login">Sign up</button>
-                <h4 id="login_btn">Already a user <a href="#">Login</a></h4>
+                <button id="signup_btn" >Sign up</button>
+                <p id="login_btn" >Already a user <a href="#">Login</a></p>
             </form>
         </div>
 
@@ -115,13 +113,12 @@ p a:hover {
             <form action="">
                 <input type="email" id="email_login" placeholder="Email"><br><br>
                 <input type="password" id="Password_login" placeholder="Paasword"><br><br>
-                    <button id="login_btn2" onclick="window.location.href='vendor.html'">Login </button>
-                <h4 id="signup_btn">Create an account <a href="# signup">signup</a></h4>
+                    <button id="login_btn2" >Login </button>
+                <h4 id="signup_redirect">Create an account <a href="#">signup</a></h4>
             </form>
         </div>
     </div>
-
-   <script src="venlog1.js"></script> 
+   <script type="module" src="venlog1.js" defer></script> 
 
 </body>
 </html>

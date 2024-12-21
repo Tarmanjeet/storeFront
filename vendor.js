@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const productForm = document.getElementById('product-form');
     const productsContainer = document.getElementById('products');
