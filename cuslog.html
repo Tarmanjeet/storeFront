@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+             
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: url('https://tse3.mm.bing.net/th?id=OIP.gfwRnYycPq_c0FRH0-10XAHaEK&pid=Api&P=0&h=180') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(147, 139, 139, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #0a0c0a;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #4fc767;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+p a {
+    color: #090c09;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+#home-btn-signup, #home-btn-login { 
+    position: relative; 
+    background: none;
+    color: rgb(13, 12, 12); 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 20px; 
+    cursor: pointer; 
+    margin-right: 10px;
+    margin-left: 70%;
+} 
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <a href="home.html">
+                <button id="home-btn-signup"  ><strong>X</strong></button>
+            </a>
+        </div>
+    
+        <div id="signup" style="text-align: center;">
+            <h3>Sign_in Page</h3>
+            <form action="">
+                <input type="text" id="username" placeholder="username"><br><br>
+                <input type="email" id="email" placeholder="Email"><br><br>
+                <input type="password" id="Password" placeholder="Paasword"><br><br>
+                <input type="text" id="location" placeholder="City"><br><br>
+                <input type="text" id="Category" placeholder="Category"><br><br>
+                <button id="signin_btn">Sign up</button>
+                <h4 id="login_btn">Already a user <a href="#">Login</a></h4>
+                
+            </form>
+        </div>
+
+
+        <div id="login" style="text-align: center; display: none;">
+            
+            <h3>Log_in Page</h3>
+            <form action="">
+                <input type="email" id="email_login" placeholder="Email"><br><br>
+                <input type="password" id="Password_login" placeholder="Paasword"><br><br>
+                <button id="login_btn2" onclick="window.location.href='customer.html'">Login </button>
+                <h4 id="signup_btn">Create an account <a href="#">signup</a></h4>
+            </form>
+        </div>
+
+
+    </div>
+
+   <script src="cuslog.js"></script> 
+
+</body>
+</html>

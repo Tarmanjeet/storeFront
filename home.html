@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuicklyFresh - About Us</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>QuicklyFresh</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#help">Help</a></li>
+                    <li><a href="#" id="signin-link">Sign-in</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Welcome to QuicklyFresh! We are your go-to platform for instant grocery delivery. Our mission is to bring convenience and speed to your everyday shopping. With a wide variety of products and a user-friendly interface, we make sure your essentials reach you within minutes.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feedback, or concerns, feel free to reach out to us:</p>
+                <ul>
+                    <li>Email: support@quicklyfresh.com</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Address: 123 Fast Lane, Quick City, QC 98765</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="help" class="section">
+            <div class="container">
+                <h2>Help Center</h2>
+                <p>Need assistance? Visit our <a href="#faq">FAQ</a> section or contact our 24/7 support team. We’re here to make your experience smooth and hassle-free!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 QuicklyFresh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: black;">Sign-in as</h2>
+            <a href="cuslog.html">
+            <button class="modal-button" onclick="window.location.href='customer-signin.html'">Customer</button>
+        </a>
+        <a href="venlog.html">
+            <button class="modal-button">Vendor</button>
+        </a>
+        </div>
+    </div>
+    <script src="home.js">
+    </script>
+</body>
+</html>
