@@ -1,7 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
-// Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyB_oOpHkvWT8L8u6wE0pcYXAp364LLRxh4",
     authDomain: "hyper-local-ab655.firebaseapp.com",
@@ -11,11 +10,9 @@ const firebaseConfig = {
     appId: "1:392195243875:web:e9887d2d68821ea7965d56"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Select Elements
 const loginbtn = document.getElementById("login_btn");
 const loginbtn2 = document.getElementById("login_btn2");
 const signup = document.getElementById("signup");
@@ -23,19 +20,16 @@ const login = document.getElementById("login");
 const signupbtn = document.getElementById("signup_btn");
 const signupRedirect = document.getElementById("signup_redirect");
 
-// Toggle to Login Form
 loginbtn.addEventListener('click', () => {
     signup.style.display = 'none';
     login.style.display = 'block';
 });
 
-// Toggle to Signup Form
 signupRedirect.addEventListener('click', () => {
     signup.style.display = 'block';
     login.style.display = 'none';
 });
 
-// Signup Functionality
 signupbtn.addEventListener('click', (e) => {
     e.preventDefault();
     const email = document.getElementById('email').value;
@@ -53,7 +47,6 @@ signupbtn.addEventListener('click', (e) => {
         });
 });
 
-// Login Functionality
 loginbtn2.addEventListener('click', (e) => {
     e.preventDefault();
     const email = document.getElementById('email_login').value;
@@ -63,7 +56,7 @@ loginbtn2.addEventListener('click', (e) => {
         .then((userCredential) => {
             alert("Login Successful!");
             console.log("Logged in User: ", userCredential.user);
-            window.location.href = "customer.html";
+            window.location.href = "vendor.html";
         })
         .catch((error) => {
             alert(error.message);
